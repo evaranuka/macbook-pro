@@ -21,7 +21,7 @@ function totalit(){
 // promo code function
 
 function promoit(event){
-    if(event.target.value=='eva'){
+    if(event.target.value=='stevekaku'){
         applypromo.addEventListener('click',function(){
             totalwithpromo.innerText=parseInt(alltotal.innerText * .8);
         })
