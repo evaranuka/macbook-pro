@@ -12,55 +12,67 @@
             <img class="ml-96 p-8" src="mac-book-pro-main/images/mac.png" height="500" width="500">
         <h1 class="text-5xl font-medium mx-auto ml-28 p-3">Customize your blue 24-inch iMac with Apple M1 chip.</h1>
         <p class="2xl font-normal ml-2">Apple m1 chip with 8-core CPU with 4 performance cores and 4 effisiency cores,7-core GPU,and 16-core neural engine and 8gb unified memory,256gb ssd storage,2 thunderbold 4 ports magic mouse,magic keyboard us english.</p>
+        
+        <!-- memory section -->
         <section class="mt-6 ml-2">
             <h1 class="text-2xl font-semibold mb-1">Memory</h1>
-            <button class="border-solid border-2 border-current p-1 rounded">8GB unified memory</button>
-            <button id="memory-price" class="border-solid border-2 border-current p-1 rounded">16GB unified memory</button>
+            <button id="clicked-btn1" class="border-solid border-2 border-current p-1 rounded">8GB unified memory</button>
+            <button id="clicked-btn2" class="border-solid border-2 border-current p-1 rounded">16GB unified memory</button>
         </section>
+
+        <!-- storage section -->
         <section class="mt-4 ml-2">
             <h1 class="text-2xl font-semibold mb-1">Storage</h1>
-            <button class="border-solid border-2 border-current p-1 rounded">256Gb ssd storage</button>
-            <button class="border-solid border-2 border-current p-1 rounded">512Gb ssd storage</button>
-            <button class="border-solid border-2 border-current p-1 rounded">1Tb ssd storage</button>
+            <button id="clicked-btn3" class="border-solid border-2 border-current p-1 rounded">256Gb ssd storage</button>
+            <button id="clicked-btn4" class="border-solid border-2 border-current p-1 rounded">512Gb ssd storage</button>
+            <button id="clicked-btn5" class="border-solid border-2 border-current p-1 rounded">1Tb ssd storage</button>
         </section>
+
+        <!-- delivery section -->
         <section class="mt-4 ml-2">
             <h1 class="text-2xl font-semibold mb-1">Choose your delivery option</h1>
-            <button class="border-solid border-2 border-current p-1 rounded">Friday free prime delivery</button>
-            <button class="border-solid border-2 border-current p-1 rounded">Emergency delivery charge $20</button>
+            <button id="clicked-btn6" class="border-solid border-2 border-current p-1 rounded">Friday free prime delivery</button>
+            <button id="clicked-btn7" class="border-solid border-2 border-current p-1 rounded">Emergency delivery charge $20</button>
         </section>
+
+        <!-- price section -->
         <section class="mt-4 ml-2">
             <div class="cart-item">
                 <div class="row flex">
     
                    <div class="col-md-8">
                       <h5 class="font-medium">Best price</h5>
-                      <h5 id="memory-cost" class="font-medium">Extra memory cost</h5>
+                      <h5 class="font-medium">Extra memory cost</h5>
                       <h5 class="font-medium">Extra storage cost</h5>
                       <h5 class="font-medium">Delivery charge</h5>
                       <h5 class="font-bold">Total price</h5>
                    </div>
     
                    <div class="col-md-4 status ml-48">
-                      <h5 class="font-medium">$1,299</h5>
+                      <h5 class="font-medium">$<span id="price-total">1,299</span></h5>
                       <h5 class="font-medium">$<span id="memory-total">0</span></h5>
-                      <h5 class="font-medium">$0</h5>
-                      <h5 class="font-medium">$0</h5>
-                      <h5 class="font-bold">$1,299</h5>
+                      <h5 class="font-medium">$<span id="storage-total">0</span></h5>
+                      <h5 class="font-medium">$<span id="charge-total">0</span></h5>
+                      <h5 class="font-bold">$<span id="all-total">1,299</span></h5>
                    </div>
                 </div>
              </div>
         </section>
+
+        <!-- promo code section -->
         <section class="flex mt-3 ml-2">
             <div>
                 <p class="font-semibold">Add pomo code</p>
-                <textarea class="border-solid border-2 border-current rounded" name="instruction" id="" cols="20" rows="1"></textarea>
+                <input id="promo-input-text" type="text" class="border-solid border-2 border-current rounded" name="instruction" cols="20" rows="1">
             </div>
             <div>
-                <button class="mt-6 ml-2 p-1 px-2 rounded bg-red-500 text-white">apply</button>
+                <button id="promo-btn" class="mt-6 ml-2 p-1 px-2 rounded bg-red-500 text-white">Apply</button>
             </div>
         </section>
-        <footer class="text-4xl font-medium mt-5 ml-32 mb-2">Total:$1299</footer>
+
+        <!-- last part -->
+        <footer class="text-4xl font-medium mt-5 ml-32 mb-2">Total:$<span id="total-with-promo">1,299</span></footer>
         </main>
-        <script src="pro.js"></script>
+        <script src="js/pro.js"></script>
 </body>
 </html>
